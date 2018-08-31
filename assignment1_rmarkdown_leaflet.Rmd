@@ -1,0 +1,14 @@
+---
+title: 'Assingment 1: R Markdown & leaflet'
+author: "Mark St. John"
+date: '2018-08-31'
+output: html_document
+---
+
+```{r, eval=FALSE}
+library(leaflet)
+my_map <- my_map %>%
+  addMarkers(lat=39.2980803, lng=-76.5898801, 
+             popup="Jeff Leek's Office")
+my_map
+```
