@@ -1,14 +1,21 @@
 ---
-title: 'Assingment 1: R Markdown & leaflet'
-author: "Mark St. John"
-date: '2018-08-31'
+title: 'The best pharmacy, anywhere'
 output: html_document
 ---
 
-```{r, eval=FALSE}
+
+```{r, eval=TRUE, echo = FALSE}
 library(leaflet)
-my_map <- my_map %>%
-  addMarkers(lat=39.2980803, lng=-76.5898801, 
-             popup="Jeff Leek's Office")
+my_map <- leaflet() %>% 
+  addTiles() %>%
+  addMarkers(lat = 45.433354, lng = -76.354405,
+             popup="Clancy's Drug Store")
 my_map
 ```
+
+<em>
+Developing Data Products
+Assingment 1: R Markdown & leaflet
+</em>
+<div>
+<b><em>Created on 2018-08-31</em></b>
